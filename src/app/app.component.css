@@ -1,0 +1,143 @@
+.app-body {
+    background: white;
+}
+
+.contenedor {
+	width: 100%;
+	max-width: 1000px;
+	margin: 10px auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(1, auto);
+	grid-template-areas: "img-logo card-group";					
+}
+
+/* .container1 {
+    max-width: 90%;
+    max-height: 100vh;
+} */
+
+/* .diseno {
+    display: flex;
+} */
+
+/* .diseno1 {
+    background: white;
+    width: 50%;
+    height: auto;
+} */
+
+.img1 {
+    max-width: 100%;
+    max-height: auto;
+    background-image: url('./../assets/login/logo.png');   
+    background-position: right bottom;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    overflow: auto;
+    object-fit: cover;  
+   
+}
+
+/* .diseno2 {
+    background: white;
+    margin: auto;
+    width: 50%;
+    height: auto;
+} */
+/* "contenido"
+"diseno2"
+"card-group"  
+"quita"              
+"login " */
+
+form {
+    width:450px; /*ancho*/
+    margin: 50px; /*horizontalmente*/
+    background:rgba(0,0,0.7,0); 
+    padding: 40px 90px; /*relleno vertical y horizontal*/
+    box-sizing:border-box; /*para relleno hacia dentro y va junto con el padding*/
+    margin-top:30px; /*para bajar el formulario*/
+    border-radius:7px; /**/
+    height:100%;
+    padding-top:3px;
+    grid-area: form;
+}
+
+
+.parrafo {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.btn2 {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    background: rgb(45, 47, 175);
+}
+
+.parrafo2 {
+    text-align: center;
+    margin: auto;
+}
+
+.olvidate {
+    display: block;
+    position: relative;
+    height: 1em;
+    margin-bottom: 3em;
+}
+
+.btn1 {
+    width: 13em;
+}
+
+.cambiate {
+    display: flex;
+    position: absolute;
+}
+
+.img-logo {
+    /* background-size: 100vw 100vh;
+    background-attachment: fixed; */
+	grid-area: img-logo;
+}
+
+
+
+@media screen and (max-width: 1000px){
+   
+	/* .img.logo{
+        object-fit: contain;
+        background-size: 100vw 100vh;
+    background-attachment: fixed;
+    } */
+    .img1 {
+        /* position: absolute; */
+        /* object-fit: contain; */
+        /* padding: 2em; */
+        width: 90%;
+        height: 450px;
+        object-fit: contain;
+        /* margin: 10px; */
+        position: fixed;
+        /* padding: 1px 1px; */
+        box-sizing:border-box;
+        /* background-size: 100vw 100vh;
+        background-attachment: fixed; */
+      
+    }
+    /* form {
+        width: 100%;
+              
+       display:contents;
+       
+        
+        background:rgba(0,0,0.7,0); 
+        
+       
+    
+    } */
+}
+
